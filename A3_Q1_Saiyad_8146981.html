@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Temprature Conversion </title>
+	<script type="text/javascript">
+		
+		function f2C() {
+			var f = prompt('Please enter a temperature in degrees Fahrenheit:');
+				f=parseInt(f);
+				var c=(5/9)*(f-32);
+				c=c.toFixed(2);
+				alert (f+"°F in Celsius (°C) is "+c+"°C");
+		}
+		
+		function c2f() {
+			var c = prompt('Please enter a temperature in degrees Celsius:');
+			c=parseInt(c);
+			var f=(9/5)*(c+32);
+			f=f.toFixed(2);
+			alert (c+"°C in Fahrenheit (°F) is "+f+"°F");
+		}
+		
+	</script>
+
+</head>
+<body>
+	<input type = "button" value = "(°F) to Celsius (°C)" id="f2c" onclick="f2C()" />
+	<input type = "button" value = "(°C) to Fahrenheit (°F)" id = "c2f" onclick="c2f()" />
+</body>
+</html>
